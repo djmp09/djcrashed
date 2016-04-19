@@ -11,3 +11,26 @@ body {
 a.note-panel-link {
     text-decoration: none;
 }
+
+ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #20B2AA
+}
+
+li a:hover{
+	text-decoration: none;
+	background-color: #66CDAA;
+}
+
+li a{
+	width: 100px; 
+	background-color: #20B2AA; 
+	padding: 20px;
+}
+
+li{
+	float: left;
+}

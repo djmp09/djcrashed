@@ -1,0 +1,1 @@
+@"C:\Users\ASUS\Desktop\Assign1\djcrashed\app\myvenv\Scripts\python.exe" "C:\Users\ASUS\Desktop\Assign1\djcrashed\app\myvenv\Scripts\markdown_py" %*
