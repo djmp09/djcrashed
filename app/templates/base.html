@@ -1,4 +1,5 @@
 {% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -32,9 +33,13 @@
 <!-- Custom styles -->
 <link rel="stylesheet" type="text/css"
     href="{% static 'css/styles.css' %}">
+
+    <link rel="stylesheet" type="text/css"
+    href="{% static 'css/custom.css' %}">
 {% endblock head_styles %}
+
 </head>
-<body>
+
 {% block header %}
 {% endblock header %}
 <div class="container">

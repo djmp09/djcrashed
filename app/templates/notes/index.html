@@ -4,8 +4,10 @@
 {% block header %}
 {% include 'notes/note_search.html' %}
 {% endblock header %}
-
+{% load staticfiles %}
 {% block content %}
+
+
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
         <div class="panel panel-default">
@@ -22,9 +24,11 @@
 </div>
 <div class="row">
     {% for note in note_list %}
+
     <div class="col-md-3">
         <a class="note-panel-link" href="{% url 'notes:update' note.id %}">
             <div class="panel panel-default">
+            
                 {% if note.title %}
                 <div class="panel-heading"><b>{{ note.title }}</b></div>
                 {% endif %}
@@ -40,4 +44,5 @@
     </div>
     {% endfor %}
 </div>
+
 {% endblock content %}
