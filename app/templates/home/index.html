@@ -4,10 +4,48 @@
 {% block content %}
 <div class="col-md-12">
     <div class="jumbotron">
-        <h1>Hello there!</h1>
-        <p>There is nothing to see here so please see my <b>notes</b> app instead or visit other links above.
-        </p>
+        <h1>NOTES</h1>
+        <p>There is nothing to see here so please see my <b>notes</b> app instead.</p>
     </div>
 </div>
 
+<div class="col-md-12">
+    <div class="jumbotron">
+        <h1>BLOG</h1>
+        <p>There is nothing to see here so please see my <b>Blog</b> app instead.</p>
+        <p><a class="btn btn-raised btn-primary btn-lg"  href="{% url 'blog:post_list' %}"
+        >Blog</a></p>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="jumbotron">
+        <h1>GALLERY</h1>
+        <p>There is nothing to see here so please see my <b>Gallery</b> app instead.</p>
+        <p><a class="btn btn-raised btn-primary btn-lg" href="{% url 'gallery:post_pics' %}" >Gallery</a></p>
+    </div>
+</div>
 {% endblock content %}
+
+
+{% block footer %}
+<a href="https://www.facebook.com/angelo.suinan" <button type="button" class="btn btn-info">Facebook</button></a>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<a href="https://mail.google.com/mail/u/0/#inbox"<button type="button" class="btn btn-primary">Gmail</button></a>
+
+<!-- Indicates a successful or positive action -->
+<a href="https://github.com/angelosuinan"<button type="button" class="btn btn-success">Github</button></a>
+
+<!-- Contextual button for informational alert messages -->
+<a href="https://mail.yahoo.com/angelosuinan"<button type="button" class="btn btn-info">Yahoo</button></a>
+
+<!-- Indicates caution should be taken with this action -->
+<a href="https://mail.google.com/mail/u/0/#inbox"<button type="button" class="btn btn-warning">CodeFight</button></a>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<a href="https://mail.google.com/mail/u/0/#inbox"<button type="button" class="btn btn-danger">Hackerrank</button></a>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+
+{% endblock footer %}
